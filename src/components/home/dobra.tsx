@@ -20,11 +20,10 @@ export function Dobra() {
           {/* Stat 1 */}
           <div className="flex flex-col items-center gap-3">
             <Image
-              src="/images/smartlovers-01.webp"
-              alt="Smart Plástica"
+              src="/images/selo-realizando-sonhos-light.svg"
+              alt="Smart Plástica - Realizando Sonhos"
               width={80}
               height={80}
-              className="rounded-full"
             />
             <p className="font-display text-2xl md:text-3xl text-[#f0eae1] font-semibold">
               + 5 anos
@@ -35,11 +34,10 @@ export function Dobra() {
           {/* Stat 2 */}
           <div className="flex flex-col items-center gap-3">
             <Image
-              src="/images/smartlovers-02.webp"
+              src="/images/selo-smart-lovers-light.svg"
               alt="Smart Lovers"
               width={80}
               height={80}
-              className="rounded-full"
             />
             <p className="font-display text-2xl md:text-3xl text-[#f0eae1] font-semibold">
               + de 2.000

@@ -92,11 +92,11 @@ export function Differentials() {
           </div>
           <div className="hidden md:block shrink-0">
             <Image
-              src="/images/smartlovers-03.webp"
+              src="/images/selo-smart-lovers.svg"
               alt="Smart Lovers"
               width={120}
               height={120}
-              className="rounded-full animate-spin-slow"
+              className="animate-spin-slow"
             />
           </div>
         </div>
