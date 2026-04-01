@@ -51,13 +51,17 @@ h6 {
 /* Cursor pointer for all interactive elements */
 a,
 button,
-[role="button"],
-input[type="submit"],
-input[type="button"],
+label,
 select,
 summary,
-[tabindex]:not([tabindex="-1"]) {
-  cursor: pointer;
+details,
+[role="button"],
+[type="submit"],
+[type="button"],
+[type="reset"],
+[tabindex]:not([tabindex="-1"]),
+[onclick] {
+  cursor: pointer !important;
 }
 
 /* Slow spin animation for seals */
