@@ -68,12 +68,12 @@ export function AboutSection() {
           </div>
 
           {/* Image */}
-          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+          <div className="relative aspect-[3/4] max-h-[550px] rounded-2xl overflow-hidden">
             <Image
               src="/images/quem-somos.webp"
               alt="Equipe Smart Plástica São Paulo"
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
