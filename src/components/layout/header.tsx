@@ -20,8 +20,8 @@ export function Header() {
     <header
       className={`sticky top-0 z-40 w-full transition-all ${
         scrolled
-          ? "bg-[#f5efe9]/95 shadow-sm backdrop-blur-sm"
-          : "bg-[#f5efe9]"
+          ? "bg-brand-dark/95 shadow-lg backdrop-blur-sm"
+          : "bg-brand-dark"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center px-4 py-3 lg:px-8">
@@ -33,6 +33,7 @@ export function Header() {
             width={160}
             height={48}
             priority
+            className="brightness-0 invert"
           />
         </Link>
 
@@ -42,7 +43,7 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="relative text-sm font-normal text-brand-dark transition-colors hover:text-brand-primary after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-brand-primary after:transition-all hover:after:w-full"
+              className="relative text-sm font-normal text-white/80 transition-colors hover:text-white after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 after:bg-brand-light after:transition-all hover:after:w-full"
             >
               {item.label}
             </Link>
@@ -54,7 +55,7 @@ export function Header() {
           href={CONTACT.whatsappDefault}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden shrink-0 rounded-full bg-brand-dark px-5 py-2 text-sm font-medium text-white transition hover:bg-brand-warm lg:inline-flex lg:items-center lg:gap-1"
+          className="hidden shrink-0 rounded-full border border-white/30 bg-white/10 px-5 py-2 text-sm font-medium text-white transition hover:bg-white/20 lg:inline-flex lg:items-center lg:gap-1"
         >
           Fale com a Consultora
           <span aria-hidden="true">&rarr;</span>
@@ -69,18 +70,18 @@ export function Header() {
         >
           <div className="flex w-6 flex-col gap-1.5">
             <span
-              className={`h-0.5 w-full bg-brand-dark transition-all duration-300 ${
-                mobileOpen ? "translate-y-2 rotate-45" : ""
+              className={`h-0.5 w-full transition-all duration-300 ${
+                mobileOpen ? "translate-y-2 rotate-45 bg-brand-dark" : "bg-white"
               }`}
             />
             <span
-              className={`h-0.5 w-full bg-brand-dark transition-all duration-300 ${
-                mobileOpen ? "opacity-0" : ""
+              className={`h-0.5 w-full transition-all duration-300 ${
+                mobileOpen ? "opacity-0 bg-brand-dark" : "bg-white"
               }`}
             />
             <span
-              className={`h-0.5 w-full bg-brand-dark transition-all duration-300 ${
-                mobileOpen ? "-translate-y-2 -rotate-45" : ""
+              className={`h-0.5 w-full transition-all duration-300 ${
+                mobileOpen ? "-translate-y-2 -rotate-45 bg-brand-dark" : "bg-white"
               }`}
             />
           </div>
@@ -89,7 +90,7 @@ export function Header() {
 
       {/* Mobile menu overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-0 z-40 bg-[#f5efe9] lg:hidden">
+        <div className="fixed inset-0 top-0 z-40 bg-brand-beige lg:hidden">
           <div className="flex h-full flex-col items-center justify-center gap-8 px-6">
             {NAV_ITEMS.map((item) => (
               <Link
