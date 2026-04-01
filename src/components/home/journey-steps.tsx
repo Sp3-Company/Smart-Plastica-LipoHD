@@ -41,62 +41,63 @@ const STEPS = [
 
 export function JourneySteps() {
   return (
-    <section className="py-16 md:py-24 bg-brand-dark">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-          {/* Left column — title, subtitle, CTA */}
-          <div className="flex flex-col justify-center">
-            <span className="text-brand-light uppercase text-sm font-semibold tracking-widest">
+    <section className="bg-brand-dark">
+      <div className="mx-auto max-w-7xl px-4 py-16 md:py-24">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* Left column — sticky title + CTA */}
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            <span className="text-sm font-semibold uppercase tracking-widest text-brand-light">
               COMO FUNCIONA
             </span>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-white mt-3 mb-4">
+            <h2 className="mt-3 mb-4 font-display text-3xl text-white md:text-4xl lg:text-5xl">
               SUA JORNADA COM A SMART PLÁSTICA
             </h2>
-            <p className="text-brand-beige text-lg leading-relaxed mb-10">
+            <p className="mb-10 text-lg leading-relaxed text-white/70">
               Seu sonho vira decisão em seis passos
             </p>
 
-            <div>
-              <Link
-                href="/como-funciona"
-                className="inline-flex items-center gap-2 rounded-full border border-white/30 px-8 py-3 font-semibold text-white transition-colors hover:bg-white/10"
-              >
-                Entenda sua jornada completa
+            <Link
+              href="/como-funciona"
+              className="group inline-flex items-center gap-3 rounded-full border border-white/30 py-2 pr-2 pl-6 text-sm font-medium text-white transition hover:bg-white/10"
+            >
+              Entenda sua jornada completa
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition group-hover:rotate-45">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
+                  width="14"
+                  height="14"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  strokeWidth="2"
+                  strokeWidth="2.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
                 </svg>
-              </Link>
-            </div>
+              </span>
+            </Link>
           </div>
 
-          {/* Right column — numbered steps */}
-          <div className="space-y-8">
-            {STEPS.map((step) => (
-              <div key={step.number} className="flex gap-5">
+          {/* Right column — scrollable numbered steps */}
+          <div>
+            {STEPS.map((step, index) => (
+              <div
+                key={step.number}
+                className={`flex gap-5 py-8${index < STEPS.length - 1 ? " border-b border-white/10" : ""}`}
+              >
                 {/* Number circle */}
                 <div className="shrink-0">
-                  <div className="w-12 h-12 rounded-full border-2 border-brand-light text-white flex items-center justify-center font-display text-xl font-semibold">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-brand-light/40 text-sm text-brand-light">
                     {step.number}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div>
-                  <h3 className="font-display text-xl text-white font-semibold mb-1">
+                  <h3 className="text-lg font-semibold text-white">
                     {step.title}
                   </h3>
-                  <p className="text-brand-beige text-sm leading-relaxed">
+                  <p className="mt-2 text-sm leading-relaxed text-white/70">
                     {step.description}
                   </p>
                 </div>

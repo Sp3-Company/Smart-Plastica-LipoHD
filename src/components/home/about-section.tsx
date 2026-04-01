@@ -68,13 +68,14 @@ export function AboutSection() {
           </div>
 
           {/* Image */}
-          <div className="relative aspect-[3/4] max-h-[550px] rounded-2xl overflow-hidden">
+          <div className="flex items-center justify-center">
             <Image
               src="/images/quem-somos.webp"
               alt="Equipe Smart Plástica São Paulo"
-              fill
-              className="object-cover object-top"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              width={506}
+              height={647}
+              className="rounded-2xl w-full max-w-[420px] h-auto"
+              sizes="(max-width: 1024px) 100vw, 420px"
             />
           </div>
         </div>

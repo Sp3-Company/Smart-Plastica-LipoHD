@@ -55,10 +55,12 @@ export function Header() {
           href={CONTACT.whatsappDefault}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden shrink-0 rounded-full border border-white/30 bg-white/10 px-5 py-2 text-sm font-medium text-white transition hover:bg-white/20 lg:inline-flex lg:items-center lg:gap-1"
+          className="hidden shrink-0 items-center gap-3 border border-white/40 text-white rounded-full pl-6 pr-2 py-2 text-sm font-medium hover:bg-white/10 transition group lg:inline-flex"
         >
           Fale com a Consultora
-          <span aria-hidden="true">&rarr;</span>
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition group-hover:rotate-45">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </span>
         </a>
 
         {/* Mobile hamburger */}
@@ -106,9 +108,12 @@ export function Header() {
               href={CONTACT.whatsappDefault}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 rounded-full bg-brand-dark px-6 py-3 text-sm font-medium text-white transition hover:bg-brand-warm"
+              className="mt-4 inline-flex items-center gap-3 bg-brand-dark text-white rounded-full pl-6 pr-2 py-2 text-sm font-medium hover:bg-brand-warm transition group"
             >
-              Fale com a Consultora &rarr;
+              Fale com a Consultora
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition group-hover:rotate-45">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </span>
             </a>
           </div>
         </div>

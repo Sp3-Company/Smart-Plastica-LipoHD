@@ -46,17 +46,21 @@ export function Hero() {
               href={CONTACT.whatsappDefault}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-brand-primary text-white rounded-full px-7 py-3 text-center text-sm font-semibold hover:bg-brand-warm transition-colors"
+              className="inline-flex items-center gap-3 bg-brand-dark text-white rounded-full pl-6 pr-2 py-2 text-sm font-medium hover:bg-brand-warm transition group"
             >
               Fale com a nossa Consultora
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-brand-dark transition group-hover:rotate-45">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </span>
             </a>
             <Link
               href="/como-funciona"
-              className="inline-flex items-center gap-2 border border-white/50 text-white rounded-full px-7 py-3 text-center text-sm font-semibold hover:bg-white/10 transition-colors"
+              className="inline-flex items-center gap-3 border border-white/40 text-white rounded-full pl-6 pr-2 py-2 text-sm font-medium hover:bg-white/10 transition group"
             >
               Saiba como funciona
-              <span aria-hidden="true">&rarr;</span>
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/20 text-white transition group-hover:rotate-45">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </span>
             </Link>
           </div>
         </div>
