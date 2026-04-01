@@ -2,7 +2,7 @@ import { FAQ_ITEMS, CONTACT } from "@/lib/constants"
 
 export function FAQ() {
   return (
-    <section className="py-16 md:py-24 bg-brand-gray/30">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-3xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-14">
@@ -10,7 +10,7 @@ export function FAQ() {
             FAQ
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3">
-            DUVIDAS FREQUENTES
+            DÚVIDAS FREQUENTES
           </h2>
         </div>
 
@@ -51,7 +51,7 @@ export function FAQ() {
         {/* Contact CTA */}
         <div className="text-center mt-14 space-y-4">
           <p className="text-brand-neutral-warm">
-            Nao encontrou a resposta? Entre em contato pelo WhatsApp
+            Não encontrou a resposta? Entre em contato pelo WhatsApp
           </p>
           <a
             href={CONTACT.whatsappDefault}

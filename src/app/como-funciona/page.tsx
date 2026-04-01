@@ -2,13 +2,13 @@ import type { Metadata } from "next"
 import { SITE, CONTACT } from "@/lib/constants"
 
 export const metadata: Metadata = {
-  title: `Como Funciona | Smart Plastica Sao Paulo`,
+  title: `Como Funciona | Smart Plástica São Paulo`,
   description:
-    "Entenda como funciona sua jornada com a Smart Plastica. Do primeiro contato a recuperacao, um caminho seguro, claro e humanizado em Sao Paulo.",
+    "Entenda como funciona sua jornada com a Smart Plástica. Do primeiro contato à recuperação, um caminho seguro, claro e humanizado em São Paulo.",
   openGraph: {
-    title: `Como Funciona | Smart Plastica Sao Paulo`,
+    title: `Como Funciona | Smart Plástica São Paulo`,
     description:
-      "Entenda como funciona sua jornada com a Smart Plastica. Do primeiro contato a recuperacao, um caminho seguro, claro e humanizado em Sao Paulo.",
+      "Entenda como funciona sua jornada com a Smart Plástica. Do primeiro contato à recuperação, um caminho seguro, claro e humanizado em São Paulo.",
     url: `https://${SITE.domain}/como-funciona`,
     siteName: SITE.name,
     locale: "pt_BR",
@@ -18,77 +18,77 @@ export const metadata: Metadata = {
 }
 
 const SUMMARY_STEPS = [
-  "Conversa inicial para entender voce",
-  "Definicao do procedimento com especialista",
-  "Indicacao do cirurgiao ideal para o seu caso",
-  "Organizacao da cirurgia com seguranca",
-  "Suporte durante toda a recuperacao",
+  "Conversa inicial para entender você",
+  "Definição do procedimento com especialista",
+  "Indicação do cirurgião ideal para o seu caso",
+  "Organização da cirurgia com segurança",
+  "Suporte durante toda a recuperação",
 ]
 
 const DETAILED_STEPS = [
   {
     number: 1,
-    title: "Primeiro contato: conhecemos voce",
+    title: "Primeiro contato: conhecemos você",
     description:
-      "Videochamada gratuita e sem compromisso. Sua consultora especializada conversa com voce para entender suas expectativas, tirar duvidas e orientar sobre possibilidades. Duracao media: 30 a 45 minutos.",
+      "Videochamada gratuita e sem compromisso. Sua consultora especializada conversa com você para entender suas expectativas, tirar dúvidas e orientar sobre possibilidades. Duração média: 30 a 45 minutos.",
   },
   {
     number: 2,
-    title: "Planejamento: o que voce precisa e o que e possivel",
+    title: "Planejamento: o que você precisa e o que é possível",
     description:
       "Aprofundamos o entendimento sobre seu momento de vida, rotina, corpo e expectativas para criar um plano personalizado.",
   },
   {
     number: 3,
-    title: "Match perfeito: o profissional certo para voce",
+    title: "Match perfeito: o profissional certo para você",
     description:
-      "Fazemos o match ideal entre voce e o cirurgiao certificado pela SBCP mais indicado para o seu caso. Agendamos a consulta presencial e orientamos sobre como se preparar.",
+      "Fazemos o match ideal entre você e o cirurgião certificado pela SBCP mais indicado para o seu caso. Agendamos a consulta presencial e orientamos sobre como se preparar.",
   },
   {
     number: 4,
-    title: "Avaliacao medica: seguranca e planejamento tecnico",
+    title: "Avaliação médica: segurança e planejamento técnico",
     description:
-      "Consulta presencial com avaliacao fisica completa, analise do historico clinico, definicao do plano cirurgico, solicitacao de exames pre-operatorios e definicao da data.",
+      "Consulta presencial com avaliação física completa, análise do histórico clínico, definição do plano cirúrgico, solicitação de exames pré-operatórios e definição da data.",
   },
   {
     number: 5,
     title: "Planejamento financeiro: seu sonho ao seu alcance",
     description:
-      "Apresentacao do investimento, possibilidades de pagamento e planejamento consciente e sem pressao.",
+      "Apresentação do investimento, possibilidades de pagamento e planejamento consciente e sem pressão.",
   },
   {
     number: 6,
-    title: "Recuperacao: presentes em cada fase",
+    title: "Recuperação: presentes em cada fase",
     description:
-      "Cirurgia em hospital de referencia em Sao Paulo. Pos-operatorio com protocolos rigorosos, retornos programados e acompanhamento proximo.",
+      "Cirurgia em hospital de referência em São Paulo. Pós-operatório com protocolos rigorosos, retornos programados e acompanhamento próximo.",
   },
 ]
 
 const FAQ_ITEMS = [
   {
-    question: "Quanto tempo leva do primeiro contato ate a cirurgia?",
+    question: "Quanto tempo leva do primeiro contato até a cirurgia?",
     answer:
-      "Em media, 2 a 4 semanas apos a consulta presencial, dependendo dos exames e preparo necessarios.",
+      "Em média, 2 a 4 semanas após a consulta presencial, dependendo dos exames e preparo necessários.",
   },
   {
-    question: "Posso escolher meu cirurgiao?",
+    question: "Posso escolher meu cirurgião?",
     answer:
-      "O match e feito pela consultora com base no seu perfil e necessidades. Se voce tiver preferencia por um profissional especifico, avaliamos a melhor indicacao.",
+      "O match é feito pela consultora com base no seu perfil e necessidades. Se você tiver preferência por um profissional específico, avaliamos a melhor indicação.",
   },
   {
-    question: "E se eu tiver duvidas entre a consulta e a cirurgia?",
+    question: "E se eu tiver dúvidas entre a consulta e a cirurgia?",
     answer:
-      "Nossa equipe esta disponivel durante toda a jornada para esclarecer qualquer questao.",
+      "Nossa equipe está disponível durante toda a jornada para esclarecer qualquer questão.",
   },
   {
     question: "Qual a forma de pagamento?",
     answer:
-      "Oferecemos parcelamento em ate 18x no cartao de credito, alem de outras formas que sua consultora pode detalhar.",
+      "Oferecemos parcelamento em até 18x no cartão de crédito, além de outras formas que sua consultora pode detalhar.",
   },
   {
     question: "Preciso de acompanhante?",
     answer:
-      "Sim, e obrigatorio ter um acompanhante no dia da cirurgia e nas primeiras 24 a 48 horas.",
+      "Sim, é obrigatório ter um acompanhante no dia da cirurgia e nas primeiras 24 a 48 horas.",
   },
 ]
 
@@ -99,10 +99,10 @@ export default function ComoFuncionaPage() {
       <section className="bg-brand-beige py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-brand-dark mb-6">
-            COMO FUNCIONA A SUA JORNADA COM A SMART PLASTICA
+            COMO FUNCIONA A SUA JORNADA COM A SMART PLÁSTICA
           </h1>
           <p className="text-brand-dark/80 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            Do primeiro contato a plena recuperacao, um caminho seguro, claro e
+            Do primeiro contato à plena recuperação, um caminho seguro, claro e
             humanizado.
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function ComoFuncionaPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="text-brand-primary uppercase text-sm font-semibold tracking-widest">
-              VISAO GERAL
+              VISÃO GERAL
             </span>
             <h2 className="font-display text-3xl md:text-4xl text-brand-dark mt-3">
               SUA JORNADA EM 5 PASSOS
@@ -209,7 +209,7 @@ export default function ComoFuncionaPage() {
               FAQ
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3">
-              DUVIDAS SOBRE A JORNADA
+              DÚVIDAS SOBRE A JORNADA
             </h2>
           </div>
 
@@ -253,11 +253,11 @@ export default function ComoFuncionaPage() {
       <section className="py-16 md:py-24 bg-brand-beige">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-6">
-            PRONTA PARA COMECAR?
+            PRONTA PARA COMEÇAR?
           </h2>
           <p className="text-brand-dark/80 text-lg leading-relaxed max-w-xl mx-auto mb-10">
-            Fale com uma consultora especializada e de o primeiro passo na sua
-            jornada com a Smart Plastica.
+            Fale com uma consultora especializada e dê o primeiro passo na sua
+            jornada com a Smart Plástica.
           </p>
           <a
             href={CONTACT.whatsappAgenda}

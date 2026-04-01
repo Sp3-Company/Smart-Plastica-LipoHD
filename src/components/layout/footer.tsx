@@ -3,8 +3,8 @@ import Image from "next/image"
 import { SITE, CONTACT, ADDRESS, NAV_ITEMS } from "@/lib/constants"
 
 const LEGAL_LINKS = [
-  { label: "Politica de Privacidade", href: "#" },
-  { label: "Politica de Cookies", href: "#" },
+  { label: "Política de Privacidade", href: "#" },
+  { label: "Política de Cookies", href: "#" },
   { label: "Termos de Uso", href: "#" },
 ]
 
@@ -55,7 +55,7 @@ export function Footer() {
           <div className="space-y-4">
             <Image
               src="/images/logo.svg"
-              alt="Smart Plastica"
+              alt="Smart Plástica"
               width={140}
               height={42}
               className="brightness-0 invert"
@@ -68,7 +68,7 @@ export function Footer() {
           {/* Column 2: Navigation */}
           <div>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-brand-light">
-              Navegacao
+              Navegação
             </h3>
             <nav className="flex flex-col gap-2.5">
               {NAV_ITEMS.map((item) => (
@@ -108,7 +108,7 @@ export function Footer() {
           {/* Column 4: Address + Social */}
           <div>
             <h3 className="mb-4 text-sm font-bold uppercase tracking-wider text-brand-light">
-              Endereco
+              Endereço
             </h3>
             <p className="text-sm text-brand-beige">
               {ADDRESS.street} - {ADDRESS.neighborhood}

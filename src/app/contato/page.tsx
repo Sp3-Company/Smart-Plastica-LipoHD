@@ -4,7 +4,7 @@ import { createMetadata } from "@/lib/metadata"
 export const metadata = createMetadata({
   title: "Contato",
   description:
-    "Entre em contato com a Smart Plastica. Agende sua videochamada gratuita ou tire suas duvidas sobre cirurgia plastica em Sao Paulo.",
+    "Entre em contato com a Smart Plástica. Agende sua videochamada gratuita ou tire suas dúvidas sobre cirurgia plástica em São Paulo.",
   path: "/contato",
 })
 
@@ -16,17 +16,17 @@ const ALL_PROCEDURES = [
 
 const CONTACT_FAQ = [
   {
-    question: "A videochamada e realmente gratuita?",
+    question: "A videochamada é realmente gratuita?",
     answer: "Sim, totalmente gratuita e sem compromisso.",
   },
   {
     question: "Qual o tempo de retorno?",
-    answer: "Ate 24 horas uteis apos envio do formulario.",
+    answer: "Até 24 horas úteis após envio do formulário.",
   },
   {
     question: "Posso fazer uma visita presencial?",
     answer:
-      "As consultas com cirurgiao sao agendadas apos a videochamada inicial com a consultora.",
+      "As consultas com cirurgião são agendadas após a videochamada inicial com a consultora.",
   },
 ]
 
@@ -37,10 +37,10 @@ export default function ContatoPage() {
       <section className="bg-brand-beige py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="font-display text-3xl md:text-5xl lg:text-6xl text-brand-dark leading-tight max-w-5xl mx-auto">
-            ENTRE EM CONTATO COM A SMART PLASTICA
+            ENTRE EM CONTATO COM A SMART PLÁSTICA
           </h1>
           <p className="text-brand-neutral-warm text-lg md:text-xl max-w-3xl mx-auto mt-6 leading-relaxed">
-            Agende sua videochamada gratuita ou tire suas duvidas. Seguranca,
+            Agende sua videochamada gratuita ou tire suas dúvidas. Segurança,
             clareza e acolhimento.
           </p>
         </div>
@@ -56,9 +56,9 @@ export default function ContatoPage() {
                 Comece sua jornada agora
               </h2>
               <p className="text-brand-neutral-warm leading-relaxed mb-8">
-                A melhor forma de comecar e conversando com a consultora
+                A melhor forma de começar é conversando com a consultora
                 especializada. Videochamada gratuita e sem compromisso. Primeiro
-                passo para transformar o sonho em decisao.
+                passo para transformar o sonho em decisão.
               </p>
 
               <form className="space-y-5">
@@ -242,7 +242,7 @@ export default function ContatoPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-brand-dark mb-1">
-                      Horario de Atendimento
+                      Horário de Atendimento
                     </h3>
                     <p className="text-brand-neutral-warm">{CONTACT.hours}</p>
                   </div>
@@ -274,7 +274,7 @@ export default function ContatoPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-brand-dark mb-1">
-                      Endereco
+                      Endereço
                     </h3>
                     <p className="text-brand-neutral-warm">{ADDRESS.full}</p>
                   </div>
@@ -291,7 +291,7 @@ export default function ContatoPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Smart Plastica Sao Paulo - Mapa"
+                  title="Smart Plástica São Paulo - Mapa"
                 />
               </div>
             </div>
@@ -304,7 +304,7 @@ export default function ContatoPage() {
         <div className="max-w-3xl mx-auto px-4">
           <div className="text-center mb-14">
             <span className="text-brand-primary uppercase text-sm font-semibold tracking-widest">
-              DUVIDAS SOBRE CONTATO
+              DÚVIDAS SOBRE CONTATO
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3">
               PERGUNTAS FREQUENTES

@@ -2,20 +2,20 @@ import { ADDRESS } from "@/lib/constants"
 
 export function Location() {
   return (
-    <section className="py-16 md:py-24 bg-brand-gray/30">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-3">
-            ONDE ENCONTRAR A SMART PLASTICA
+            ONDE ENCONTRAR A SMART PLÁSTICA
           </h2>
           <p className="text-brand-primary uppercase text-sm font-semibold tracking-widest">
-            ATENDEMOS VOCE EM SAO PAULO
+            ATENDEMOS VOCÊ EM SÃO PAULO
           </p>
           <p className="text-brand-neutral-warm text-lg leading-relaxed mt-4">
-            Nossas cirurgias sao realizadas em hospitais de referencia em Sao
+            Nossas cirurgias são realizadas em hospitais de referência em São
             Paulo, com infraestrutura completa e equipe multidisciplinar
-            preparada para garantir sua seguranca e conforto.
+            preparada para garantir sua segurança e conforto.
           </p>
         </div>
 
@@ -47,13 +47,13 @@ export function Location() {
 
               <div>
                 <h3 className="font-display text-2xl text-brand-dark mb-2">
-                  Sao Paulo
+                  São Paulo
                 </h3>
                 <p className="text-brand-dark/80 leading-relaxed">
                   {ADDRESS.full}
                 </p>
                 <p className="text-brand-neutral text-sm mt-2">
-                  Moema — Sao Paulo, SP
+                  Moema — São Paulo, SP
                 </p>
               </div>
             </div>
@@ -69,7 +69,7 @@ export function Location() {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Smart Plastica Sao Paulo - Mapa"
+              title="Smart Plástica São Paulo - Mapa"
             />
           </div>
         </div>

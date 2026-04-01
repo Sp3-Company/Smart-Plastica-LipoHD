@@ -8,22 +8,22 @@ export function Manifesto() {
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-10">
-          ACREDITAMOS QUE BELEZA TAMBEM E SAUDE EMOCIONAL
+          ACREDITAMOS QUE BELEZA TAMBÉM É SAÚDE EMOCIONAL
         </h2>
 
         <div className="space-y-6 text-white/80 text-lg md:text-xl leading-relaxed">
           <p>
-            Autoestima muda tudo. Muda a forma como voce se olha no espelho,
+            Autoestima muda tudo. Muda a forma como você se olha no espelho,
             como entra numa sala, como se apresenta ao mundo. A cirurgia
-            plastica, quando feita com responsabilidade e tecnica, nao e sobre
-            vaidade -- e sobre reconexao. E sobre olhar para si mesma e se
+            plástica, quando feita com responsabilidade e técnica, não é sobre
+            vaidade -- é sobre reconexão. É sobre olhar para si mesma e se
             reconhecer.
           </p>
           <p>
-            Na Smart Plastica, acreditamos que cada mulher merece ter acesso a
-            esse caminho com seguranca, acolhimento e transparencia. Nao
-            vendemos procedimentos: guiamos transformacoes. E estamos aqui para
-            caminhar ao seu lado, do sonho a realizacao.
+            Na Smart Plástica, acreditamos que cada mulher merece ter acesso a
+            esse caminho com segurança, acolhimento e transparência. Não
+            vendemos procedimentos: guiamos transformações. E estamos aqui para
+            caminhar ao seu lado, do sonho à realização.
           </p>
         </div>
       </div>

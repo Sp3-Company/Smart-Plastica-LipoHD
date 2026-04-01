@@ -21,10 +21,10 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: `Cirurgia Plastica em Sao Paulo | ${SITE.name}`,
+  title: `Cirurgia Plástica em São Paulo | ${SITE.name}`,
   description: SITE.description,
   openGraph: {
-    title: `Cirurgia Plastica em Sao Paulo | ${SITE.name}`,
+    title: `Cirurgia Plástica em São Paulo | ${SITE.name}`,
     description: SITE.description,
     url: `https://${SITE.domain}`,
     siteName: SITE.name,

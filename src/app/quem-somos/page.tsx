@@ -3,13 +3,13 @@ import Image from "next/image"
 import { SITE, CONTACT, ADDRESS } from "@/lib/constants"
 
 export const metadata: Metadata = {
-  title: `Quem Somos | Smart Plastica Sao Paulo`,
+  title: `Quem Somos | Smart Plástica São Paulo`,
   description:
-    "Conheca a Smart Plastica. Ha mais de 5 anos guiando mulheres na conquista da sua melhor versao com tecnologia, seguranca e tecnica em Sao Paulo.",
+    "Conheça a Smart Plástica. Há mais de 5 anos guiando mulheres na conquista da sua melhor versão com tecnologia, segurança e técnica em São Paulo.",
   openGraph: {
-    title: `Quem Somos | Smart Plastica Sao Paulo`,
+    title: `Quem Somos | Smart Plástica São Paulo`,
     description:
-      "Conheca a Smart Plastica. Ha mais de 5 anos guiando mulheres na conquista da sua melhor versao com tecnologia, seguranca e tecnica em Sao Paulo.",
+      "Conheça a Smart Plástica. Há mais de 5 anos guiando mulheres na conquista da sua melhor versão com tecnologia, segurança e técnica em São Paulo.",
     url: `https://${SITE.domain}/quem-somos`,
     siteName: SITE.name,
     locale: "pt_BR",
@@ -27,27 +27,27 @@ const DIFFERENTIALS = [
   {
     title: "Tecnologia a favor da sua beleza",
     description:
-      "Utilizamos ferramentas modernas para planejamento cirurgico, simulacoes e acompanhamento, trazendo mais previsibilidade ao seu resultado.",
+      "Utilizamos ferramentas modernas para planejamento cirúrgico, simulações e acompanhamento, trazendo mais previsibilidade ao seu resultado.",
   },
   {
-    title: "Seguranca em toda a jornada",
+    title: "Segurança em toda a jornada",
     description:
-      "Cirurgioes certificados pela SBCP, hospitais de referencia e protocolos rigorosos para que voce se sinta segura do inicio ao fim.",
+      "Cirurgiões certificados pela SBCP, hospitais de referência e protocolos rigorosos para que você se sinta segura do início ao fim.",
   },
   {
-    title: "O sonho precisa ser possivel",
+    title: "O sonho precisa ser possível",
     description:
-      "Acreditamos que realizar seu sonho nao deve ser um sacrificio. Por isso, buscamos condicoes que tornem sua decisao viavel e planejada.",
+      "Acreditamos que realizar seu sonho não deve ser um sacrifício. Por isso, buscamos condições que tornem sua decisão viável e planejada.",
   },
   {
-    title: "Voce nunca caminha sozinha",
+    title: "Você nunca caminha sozinha",
     description:
-      "Do pre ao pos-operatorio, nossa equipe esta presente em cada momento, com retornos programados e suporte dedicado a sua recuperacao.",
+      "Do pré ao pós-operatório, nossa equipe está presente em cada momento, com retornos programados e suporte dedicado à sua recuperação.",
   },
   {
-    title: "Tecnica que sustenta resultados",
+    title: "Técnica que sustenta resultados",
     description:
-      "Procedimentos realizados por especialistas que priorizam naturalidade, harmonia e resultados que se mantem ao longo do tempo.",
+      "Procedimentos realizados por especialistas que priorizam naturalidade, harmonia e resultados que se mantêm ao longo do tempo.",
   },
 ]
 
@@ -58,12 +58,12 @@ export default function QuemSomosPage() {
       <section className="bg-brand-beige py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-brand-dark mb-6">
-            TORNAMOS POSSIVEL REALIZAR SONHOS
+            TORNAMOS POSSÍVEL REALIZAR SONHOS
           </h1>
           <p className="text-brand-dark/80 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-            Guiamos mulheres na conquista da sua melhor versao com tecnologia,
-            seguranca e tecnica. Ha mais de 5 anos realizando sonhos por meio de
-            uma jornada completa, humana e responsavel em cirurgia plastica.
+            Guiamos mulheres na conquista da sua melhor versão com tecnologia,
+            segurança e técnica. Há mais de 5 anos realizando sonhos por meio de
+            uma jornada completa, humana e responsável em cirurgia plástica.
           </p>
         </div>
       </section>
@@ -75,29 +75,29 @@ export default function QuemSomosPage() {
             {/* Text */}
             <div>
               <span className="text-brand-primary uppercase text-sm font-semibold tracking-widest">
-                NOSSA HISTORIA
+                NOSSA HISTÓRIA
               </span>
               <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3 mb-8">
-                NOSSA HISTORIA E PROPOSITO
+                NOSSA HISTÓRIA E PROPÓSITO
               </h2>
 
               <div className="space-y-5 text-brand-dark/80 leading-relaxed">
                 <p>
-                  A Smart Plastica nasceu com um proposito claro. Tornar possivel
-                  a realizacao de sonhos, guiando mulheres na conquista da sua
-                  melhor versao com tecnologia, seguranca e tecnica, criando um
-                  caminho confiavel para transformar o desejo em decisao.
+                  A Smart Plástica nasceu com um propósito claro. Tornar possível
+                  a realização de sonhos, guiando mulheres na conquista da sua
+                  melhor versão com tecnologia, segurança e técnica, criando um
+                  caminho confiável para transformar o desejo em decisão.
                 </p>
                 <p>
-                  Atuamos em Sao Paulo oferecendo uma jornada estruturada,
-                  responsavel e acolhedora. Cada paciente e acolhida por uma
+                  Atuamos em São Paulo oferecendo uma jornada estruturada,
+                  responsável e acolhedora. Cada paciente é acolhida por uma
                   consultora especializada que entende seu momento, esclarece
-                  duvidas e faz o match ideal com cirurgioes certificados pela
+                  dúvidas e faz o match ideal com cirurgiões certificados pela
                   SBCP.
                 </p>
                 <p>
-                  Do primeiro contato ao pos-operatorio, jornada clara,
-                  organizada e segura. Ja sao mais de 2.000 Smart Lovers.
+                  Do primeiro contato ao pós-operatório, jornada clara,
+                  organizada e segura. Já são mais de 2.000 Smart Lovers.
                 </p>
               </div>
 
@@ -124,7 +124,7 @@ export default function QuemSomosPage() {
                     SBCP
                   </p>
                   <p className="text-brand-neutral text-sm mt-1">
-                    cirurgioes certificados
+                    cirurgiões certificados
                   </p>
                 </div>
               </div>
@@ -133,7 +133,7 @@ export default function QuemSomosPage() {
               <div className="mt-8">
                 <Image
                   src="/images/sbcp.webp"
-                  alt="Certificado SBCP - Sociedade Brasileira de Cirurgia Plastica"
+                  alt="Certificado SBCP - Sociedade Brasileira de Cirurgia Plástica"
                   width={120}
                   height={60}
                   className="object-contain"
@@ -145,7 +145,7 @@ export default function QuemSomosPage() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
               <Image
                 src="/images/quem-somos.webp"
-                alt="Equipe Smart Plastica Sao Paulo"
+                alt="Equipe Smart Plástica São Paulo"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -167,8 +167,8 @@ export default function QuemSomosPage() {
               POR QUE SER UMA SMART LOVER
             </h2>
             <p className="text-brand-neutral-warm text-lg leading-relaxed">
-              Somos a ponte entre o seu sonho e a realizacao dele, conectando
-              voce com o medico ideal para o seu caso.
+              Somos a ponte entre o seu sonho e a realização dele, conectando
+              você com o médico ideal para o seu caso.
             </p>
           </div>
 
@@ -202,13 +202,13 @@ export default function QuemSomosPage() {
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="text-brand-primary uppercase text-sm font-semibold tracking-widest">
-              LOCALIZACAO
+              LOCALIZAÇÃO
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3 mb-4">
               NOSSA UNIDADE
             </h2>
             <p className="text-brand-neutral-warm text-lg leading-relaxed">
-              Nossas cirurgias sao realizadas em hospitais de referencia em Sao
+              Nossas cirurgias são realizadas em hospitais de referência em São
               Paulo, com infraestrutura completa e equipe multidisciplinar.
             </p>
           </div>
@@ -241,13 +241,13 @@ export default function QuemSomosPage() {
 
                 <div>
                   <h3 className="font-display text-2xl text-brand-dark mb-2">
-                    Sao Paulo
+                    São Paulo
                   </h3>
                   <p className="text-brand-dark/80 leading-relaxed">
                     {ADDRESS.full}
                   </p>
                   <p className="text-brand-neutral text-sm mt-2">
-                    Moema — Sao Paulo, SP
+                    Moema — São Paulo, SP
                   </p>
                 </div>
               </div>
@@ -282,7 +282,7 @@ export default function QuemSomosPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Smart Plastica Sao Paulo - Mapa"
+                title="Smart Plástica São Paulo - Mapa"
               />
             </div>
           </div>

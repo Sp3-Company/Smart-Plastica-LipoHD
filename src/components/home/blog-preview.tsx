@@ -4,23 +4,23 @@ import Link from "next/link"
 const BLOG_POSTS = [
   {
     image: "/images/blog-01.webp",
-    category: "AUTOESTIMA E SAUDE",
+    category: "AUTOESTIMA E SAÚDE",
     title:
-      "Cirurgia plastica e autoestima: o que a ciencia diz sobre essa relacao",
+      "Cirurgia plástica e autoestima: o que a ciência diz sobre essa relação",
     slug: "cirurgia-plastica-e-autoestima",
   },
   {
     image: "/images/blog-02.webp",
-    category: "DICAS DE POS-OPERATORIO",
+    category: "DICAS DE PÓS-OPERATÓRIO",
     title:
-      "Pos-operatorio de cirurgia plastica: 10 cuidados essenciais para uma recuperacao segura",
+      "Pós-operatório de cirurgia plástica: 10 cuidados essenciais para uma recuperação segura",
     slug: "pos-operatorio-cuidados-essenciais",
   },
   {
     image: "/images/blog-03.webp",
     category: "PROCEDIMENTOS CORPORAIS",
     title:
-      "Abdominoplastia: tudo o que voce precisa saber antes de decidir",
+      "Abdominoplastia: tudo o que você precisa saber antes de decidir",
     slug: "abdominoplastia-guia-completo",
   },
 ]
@@ -35,7 +35,7 @@ export function BlogPreview() {
             BLOG
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3">
-            ULTIMAS NOTICIAS
+            ÚLTIMAS NOTÍCIAS
           </h2>
         </div>
 
@@ -76,7 +76,7 @@ export function BlogPreview() {
             href="/blog"
             className="inline-block border-2 border-brand-primary text-brand-primary rounded-full px-8 py-3 font-semibold hover:bg-brand-primary hover:text-white transition-colors"
           >
-            Ver outras noticias
+            Ver outras notícias
           </Link>
         </div>
       </div>

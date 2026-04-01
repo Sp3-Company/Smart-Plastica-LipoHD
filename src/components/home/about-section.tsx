@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section className="py-16 md:py-24 bg-brand-white">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text */}
@@ -11,28 +11,28 @@ export function AboutSection() {
               QUEM SOMOS
             </span>
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3 mb-8">
-              A SMART PLASTICA
+              A SMART PLÁSTICA
             </h2>
 
             <div className="space-y-5 text-brand-dark/80 leading-relaxed">
               <p>
-                A Smart Plastica e uma rede de cirurgia plastica que nasceu com
-                um proposito claro: guiar mulheres na conquista da sua melhor
-                versao com seguranca, acolhimento e tecnologia. Atuamos em Sao
-                Paulo conectando voce ao cirurgiao ideal para o seu caso.
+                A Smart Plástica é uma rede de cirurgia plástica que nasceu com
+                um propósito claro: guiar mulheres na conquista da sua melhor
+                versão com segurança, acolhimento e tecnologia. Atuamos em São
+                Paulo conectando você ao cirurgião ideal para o seu caso.
               </p>
               <p>
-                Nossas consultoras especializadas estao ao seu lado desde a
+                Nossas consultoras especializadas estão ao seu lado desde a
                 primeira conversa. Elas entendem suas necessidades, tiram
-                duvidas, orientam sobre procedimentos e acompanham cada etapa da
-                sua jornada -- da videochamada gratuita ao pos-operatorio
+                dúvidas, orientam sobre procedimentos e acompanham cada etapa da
+                sua jornada -- da videochamada gratuita ao pós-operatório
                 completo.
               </p>
               <p>
-                Todos os cirurgioes da nossa rede sao certificados pela
-                Sociedade Brasileira de Cirurgia Plastica (SBCP), garantindo
-                tecnica, etica e resultados naturais. As cirurgias sao
-                realizadas em hospitais de referencia em Sao Paulo, com
+                Todos os cirurgiões da nossa rede são certificados pela
+                Sociedade Brasileira de Cirurgia Plástica (SBCP), garantindo
+                técnica, ética e resultados naturais. As cirurgias são
+                realizadas em hospitais de referência em São Paulo, com
                 infraestrutura completa e equipe multidisciplinar.
               </p>
             </div>
@@ -59,7 +59,7 @@ export function AboutSection() {
             <div className="mt-8">
               <Image
                 src="/images/sbcp.webp"
-                alt="Certificado SBCP - Sociedade Brasileira de Cirurgia Plastica"
+                alt="Certificado SBCP - Sociedade Brasileira de Cirurgia Plástica"
                 width={120}
                 height={60}
                 className="object-contain"
@@ -71,7 +71,7 @@ export function AboutSection() {
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
             <Image
               src="/images/quem-somos.webp"
-              alt="Equipe Smart Plastica Sao Paulo"
+              alt="Equipe Smart Plástica São Paulo"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

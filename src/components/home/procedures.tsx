@@ -16,7 +16,7 @@ export function Procedures() {
     activeTab === "mulher" ? womenProcedures : menProcedures
 
   return (
-    <section className="py-16 md:py-24 bg-brand-gray/30">
+    <section className="py-16 md:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
@@ -27,29 +27,29 @@ export function Procedures() {
             PROCEDIMENTOS QUE TRANSFORMAM VIDAS
           </h2>
           <p className="text-brand-neutral-warm text-lg leading-relaxed">
-            Cada procedimento e realizado com tecnica, seguranca e um olhar
-            atento a naturalidade dos resultados.
+            Cada procedimento é realizado com técnica, segurança e um olhar
+            atento à naturalidade dos resultados.
           </p>
         </div>
 
-        {/* Tabs */}
-        <div className="flex justify-center gap-8 mb-10">
+        {/* Tabs — pill style */}
+        <div className="flex justify-center gap-2 mb-10">
           <button
             onClick={() => setActiveTab("mulher")}
-            className={`pb-2 text-lg font-semibold border-b-2 transition-colors ${
+            className={`rounded-full px-6 py-2 text-sm font-semibold transition-colors ${
               activeTab === "mulher"
-                ? "border-brand-primary text-brand-primary"
-                : "border-transparent text-brand-neutral hover:text-brand-dark"
+                ? "bg-brand-dark text-white"
+                : "text-brand-dark hover:bg-brand-beige/60"
             }`}
           >
             Mulher
           </button>
           <button
             onClick={() => setActiveTab("homem")}
-            className={`pb-2 text-lg font-semibold border-b-2 transition-colors ${
+            className={`rounded-full px-6 py-2 text-sm font-semibold transition-colors ${
               activeTab === "homem"
-                ? "border-brand-primary text-brand-primary"
-                : "border-transparent text-brand-neutral hover:text-brand-dark"
+                ? "bg-brand-dark text-white"
+                : "text-brand-dark hover:bg-brand-beige/60"
             }`}
           >
             Homem
@@ -61,14 +61,18 @@ export function Procedures() {
           {currentProcedures.map((proc) => (
             <div
               key={proc.slug}
-              className="bg-white rounded-2xl p-6 border border-brand-beige hover:border-brand-primary transition-colors"
+              className="rounded-2xl border border-brand-beige overflow-hidden hover:border-brand-primary transition-colors"
             >
-              <h3 className="font-display text-xl md:text-2xl text-brand-dark mb-3">
-                {proc.name}
-              </h3>
-              <p className="text-brand-neutral-warm text-sm leading-relaxed">
-                {proc.description}
-              </p>
+              {/* Top accent bar */}
+              <div className="h-1.5 bg-gradient-to-r from-brand-primary to-brand-light" />
+              <div className="p-6">
+                <h3 className="font-display text-xl md:text-2xl text-brand-dark mb-3">
+                  {proc.name}
+                </h3>
+                <p className="text-brand-neutral-warm text-sm leading-relaxed">
+                  {proc.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

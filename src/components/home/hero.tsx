@@ -8,7 +8,7 @@ export function Hero() {
       {/* Desktop background */}
       <Image
         src="/images/hero-desktop.webp"
-        alt="Smart Plastica - Cirurgia plastica em Sao Paulo"
+        alt="Smart Plástica - Cirurgia plástica em São Paulo"
         fill
         priority
         className="hidden md:block object-cover object-center"
@@ -17,7 +17,7 @@ export function Hero() {
       {/* Mobile background */}
       <Image
         src="/images/hero-mobile.webp"
-        alt="Smart Plastica - Cirurgia plastica em Sao Paulo"
+        alt="Smart Plástica - Cirurgia plástica em São Paulo"
         fill
         priority
         className="block md:hidden object-cover object-center"
@@ -31,14 +31,14 @@ export function Hero() {
       <div className="relative z-10 flex h-full items-end pb-16 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 w-full">
           <h1 className="font-display text-3xl md:text-5xl lg:text-6xl text-white leading-tight max-w-4xl mb-6">
-            REALIZE SUA CIRURGIA PLASTICA COM SEGURANCA, TECNOLOGIA E UM CAMINHO
-            POSSIVEL PARA VOCE REALIZAR SEU SONHO
+            REALIZE SUA CIRURGIA PLÁSTICA COM SEGURANÇA, TECNOLOGIA E UM CAMINHO
+            POSSÍVEL PARA VOCÊ REALIZAR SEU SONHO
           </h1>
 
           <p className="text-white/90 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
-            Guiamos mulheres na conquista da sua melhor versao com tecnica,
-            acompanhamento completo e cirurgioes certificados pela SBCP. Da
-            primeira conversa ao pos-operatorio, voce nunca caminha sozinha.
+            Guiamos mulheres na conquista da sua melhor versão com técnica,
+            acompanhamento completo e cirurgiões certificados pela SBCP. Da
+            primeira conversa ao pós-operatório, você nunca caminha sozinha.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

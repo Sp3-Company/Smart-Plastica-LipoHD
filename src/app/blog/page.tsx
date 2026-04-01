@@ -5,36 +5,36 @@ import { createMetadata } from "@/lib/metadata"
 export const metadata = createMetadata({
   title: "Blog",
   description:
-    "Conteudos sobre cirurgia plastica, autoestima e cuidados para sua jornada. Blog da Smart Plastica Sao Paulo.",
+    "Conteúdos sobre cirurgia plástica, autoestima e cuidados para sua jornada. Blog da Smart Plástica São Paulo.",
   path: "/blog",
 })
 
 const BLOG_POSTS = [
   {
     image: "/images/blog-01.webp",
-    category: "AUTOESTIMA E SAUDE",
+    category: "AUTOESTIMA E SAÚDE",
     title:
-      "Cirurgia plastica e autoestima: o que a ciencia diz sobre essa relacao",
+      "Cirurgia plástica e autoestima: o que a ciência diz sobre essa relação",
     excerpt:
-      "Descubra como a cirurgia plastica pode impactar positivamente a autoestima e o bem-estar emocional.",
+      "Descubra como a cirurgia plástica pode impactar positivamente a autoestima e o bem-estar emocional.",
     slug: "cirurgia-plastica-e-autoestima",
   },
   {
     image: "/images/blog-02.webp",
-    category: "DICAS DE POS-OPERATORIO",
+    category: "DICAS DE PÓS-OPERATÓRIO",
     title:
-      "Pos-operatorio de cirurgia plastica: 10 cuidados essenciais para uma recuperacao segura",
+      "Pós-operatório de cirurgia plástica: 10 cuidados essenciais para uma recuperação segura",
     excerpt:
-      "Conheca os cuidados fundamentais para garantir uma recuperacao tranquila e resultados duradouros.",
+      "Conheça os cuidados fundamentais para garantir uma recuperação tranquila e resultados duradouros.",
     slug: "pos-operatorio-cuidados-essenciais",
   },
   {
     image: "/images/blog-03.webp",
     category: "PROCEDIMENTOS CORPORAIS",
     title:
-      "Abdominoplastia: tudo o que voce precisa saber antes de decidir",
+      "Abdominoplastia: tudo o que você precisa saber antes de decidir",
     excerpt:
-      "Entenda como funciona a abdominoplastia, indicacoes, recuperacao e o que esperar do procedimento.",
+      "Entenda como funciona a abdominoplastia, indicações, recuperação e o que esperar do procedimento.",
     slug: "abdominoplastia-guia-completo",
   },
 ]
@@ -49,7 +49,7 @@ export default function BlogPage() {
             BLOG
           </h1>
           <p className="text-brand-neutral-warm text-lg md:text-xl max-w-3xl mx-auto mt-6 leading-relaxed">
-            Conteudos sobre cirurgia plastica, autoestima e cuidados para sua
+            Conteúdos sobre cirurgia plástica, autoestima e cuidados para sua
             jornada.
           </p>
         </div>

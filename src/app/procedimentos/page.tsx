@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata"
 export const metadata = createMetadata({
   title: "Procedimentos",
   description:
-    "Conhea os procedimentos de cirurgia plastica com seguranca e resultados naturais. Cirurgioes certificados pela SBCP em Sao Paulo.",
+    "Conheça os procedimentos de cirurgia plástica com segurança e resultados naturais. Cirurgiões certificados pela SBCP em São Paulo.",
   path: "/procedimentos",
 })
 
@@ -20,12 +20,12 @@ export default function ProcedimentosPage() {
       <section className="bg-brand-beige py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h1 className="font-display text-3xl md:text-5xl lg:text-6xl text-brand-dark leading-tight max-w-5xl mx-auto">
-            PROCEDIMENTOS DE CIRURGIA PLASTICA COM SEGURANCA E RESULTADOS
+            PROCEDIMENTOS DE CIRURGIA PLÁSTICA COM SEGURANÇA E RESULTADOS
             NATURAIS
           </h1>
           <p className="text-brand-neutral-warm text-lg md:text-xl max-w-3xl mx-auto mt-6 leading-relaxed">
-            Cirurgioes certificados pela SBCP, tecnologia moderna e
-            acompanhamento completo do pre ao pos-operatorio.
+            Cirurgiões certificados pela SBCP, tecnologia moderna e
+            acompanhamento completo do pré ao pós-operatório.
           </p>
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function ProcedimentosPage() {
       <section className="py-16 md:py-24 bg-brand-white">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mb-4">
-            Nao sabe qual procedimento e ideal para voce?
+            Não sabe qual procedimento é ideal para você?
           </h2>
           <p className="text-brand-neutral-warm text-lg leading-relaxed mb-10">
             Agende uma videochamada gratuita com nossa consultora especializada.
