@@ -37,30 +37,35 @@ export const PROCEDURES = {
     {
       name: "Abdominoplastia",
       slug: "abdominoplastia",
+      image: "/images/procedures/corporal-fem-02.webp",
       description:
         "Remoção do excesso de pele e gordura abdominal, com melhora do contorno e firmeza da região.",
     },
     {
       name: "Lipo HD",
       slug: "lipo-hd",
+      image: "/images/procedures/corporal-fem-03.webp",
       description:
         "Definição corporal avançada com maior evidência da musculatura, respeitando a anatomia feminina.",
     },
     {
       name: "Mommy Makeover",
       slug: "mommy-makeover",
+      image: "/images/procedures/corporal-fem-04.webp",
       description:
         "Combinação de lipoaspiração, abdominoplastia e mastopexia com ou sem prótese.",
     },
     {
       name: "Prótese de Mama",
       slug: "protese-de-mama",
+      image: "/images/procedures/corporal-fem-05.webp",
       description:
         "Prótese de silicone para mais volume, proporção e harmonia com seu corpo.",
     },
     {
       name: "Mastopexia",
       slug: "mastopexia",
+      image: "/images/procedures/corporal-fem-05.webp",
       description:
         "Levantamento e sustentação das mamas, com ou sem prótese de silicone.",
     },
@@ -69,18 +74,21 @@ export const PROCEDURES = {
     {
       name: "Abdominoplastia Masculina",
       slug: "abdominoplastia-masculina",
+      image: "/images/procedures/corporal-masc-01.webp",
       description:
         "Correção do excesso de pele e melhora do contorno abdominal masculino.",
     },
     {
       name: "Lipo HD Masculina",
       slug: "lipo-hd-masculina",
+      image: "/images/procedures/corporal-masc-02.webp",
       description:
         "Redução de gordura localizada com foco em contorno corporal mais definido.",
     },
     {
       name: "Enxertos Musculares",
       slug: "enxertos-musculares",
+      image: "/images/procedures/corporal-masc-03.webp",
       description:
         "Gordura na musculatura para dar volume em peitoral, abdôme, bíceps e trapézio.",
     },
@@ -89,30 +97,35 @@ export const PROCEDURES = {
     {
       name: "Rinoplastia",
       slug: "rinoplastia",
+      image: "/images/procedures/facial-fem-01.webp",
       description:
         "Harmonização facial através da correção estética e funcional do nariz.",
     },
     {
       name: "Blefaroplastia",
       slug: "blefaroplastia",
+      image: "/images/procedures/facial-fem-02.webp",
       description:
         "Rejuvenescimento do olhar com correção do excesso de pele nas pálpebras.",
     },
     {
       name: "Lifting Facial",
       slug: "lifting-facial",
+      image: "/images/procedures/facial-fem-03.webp",
       description:
         "Reposicionamento dos tecidos da face para suavizar sinais de envelhecimento com naturalidade.",
     },
     {
       name: "Otoplastia",
       slug: "otoplastia",
+      image: "/images/procedures/facial-fem-04.webp",
       description:
         "Correção de orelhas proeminentes, promovendo mais harmonia facial.",
     },
     {
       name: "Bichectomia",
       slug: "bichectomia",
+      image: "/images/procedures/facial-fem-05.webp",
       description:
         "Afinamento do contorno facial por meio da redução das bolsas de gordura das bochechas.",
     },

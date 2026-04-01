@@ -1,19 +1,30 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
+import Image from "next/image"
 import Link from "next/link"
-import { PROCEDURES, CONTACT } from "@/lib/constants"
+import { PROCEDURES } from "@/lib/constants"
 
 type Tab = "mulher" | "homem"
 
 export function Procedures() {
   const [activeTab, setActiveTab] = useState<Tab>("mulher")
+  const scrollRef = useRef<HTMLDivElement>(null)
 
   const womenProcedures = [...PROCEDURES.women, ...PROCEDURES.facial]
   const menProcedures = PROCEDURES.men
 
   const currentProcedures =
     activeTab === "mulher" ? womenProcedures : menProcedures
+
+  function scroll(direction: "left" | "right") {
+    if (!scrollRef.current) return
+    const amount = 304 // card width (280) + gap (24)
+    scrollRef.current.scrollBy({
+      left: direction === "left" ? -amount : amount,
+      behavior: "smooth",
+    })
+  }
 
   return (
     <section className="py-16 md:py-24 bg-white">
@@ -56,25 +67,79 @@ export function Procedures() {
           </button>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {currentProcedures.map((proc) => (
-            <div
-              key={proc.slug}
-              className="rounded-2xl border border-brand-beige overflow-hidden hover:border-brand-primary transition-colors"
-            >
-              {/* Top accent bar */}
-              <div className="h-1.5 bg-gradient-to-r from-brand-primary to-brand-light" />
-              <div className="p-6">
-                <h3 className="font-display text-xl md:text-2xl text-brand-dark mb-3">
-                  {proc.name}
-                </h3>
-                <p className="text-brand-neutral-warm text-sm leading-relaxed">
-                  {proc.description}
-                </p>
+        {/* Carousel */}
+        <div className="relative">
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide pb-4"
+          >
+            {currentProcedures.map((proc) => (
+              <div
+                key={proc.slug}
+                className="w-[280px] flex-shrink-0 snap-start bg-white rounded-2xl overflow-hidden shadow-sm border border-brand-beige hover:border-brand-primary transition-colors"
+              >
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src={proc.image}
+                    alt={proc.name}
+                    fill
+                    className="object-cover"
+                    sizes="280px"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-display text-lg text-brand-dark mb-1.5">
+                    {proc.name}
+                  </h3>
+                  <p className="text-sm text-brand-neutral leading-relaxed">
+                    {proc.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Navigation arrows */}
+          <div className="flex justify-center gap-3 mt-6">
+            <button
+              onClick={() => scroll("left")}
+              aria-label="Anterior"
+              className="w-10 h-10 rounded-full bg-brand-dark text-white flex items-center justify-center hover:bg-brand-warm transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M15 18l-6-6 6-6" />
+              </svg>
+            </button>
+            <button
+              onClick={() => scroll("right")}
+              aria-label="Próximo"
+              className="w-10 h-10 rounded-full bg-brand-dark text-white flex items-center justify-center hover:bg-brand-warm transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* CTA */}

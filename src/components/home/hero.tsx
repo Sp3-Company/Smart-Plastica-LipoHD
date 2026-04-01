@@ -30,12 +30,12 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 flex h-full items-end pb-16 md:pb-24">
         <div className="max-w-7xl mx-auto px-4 w-full">
-          <h1 className="font-display text-3xl md:text-5xl lg:text-6xl text-white leading-tight max-w-4xl mb-6">
+          <h1 className="font-display text-3xl md:text-4xl lg:text-5xl text-[#f5efe9] leading-tight max-w-4xl mb-6">
             REALIZE SUA CIRURGIA PLÁSTICA COM SEGURANÇA, TECNOLOGIA E UM CAMINHO
             POSSÍVEL PARA VOCÊ REALIZAR SEU SONHO
           </h1>
 
-          <p className="text-white/90 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+          <p className="text-[#f5efe9]/90 text-sm md:text-base max-w-2xl mb-10 leading-relaxed">
             Guiamos mulheres na conquista da sua melhor versão com técnica,
             acompanhamento completo e cirurgiões certificados pela SBCP. Da
             primeira conversa ao pós-operatório, você nunca caminha sozinha.

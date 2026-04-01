@@ -9,7 +9,7 @@ export function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"
-      className="group fixed bottom-6 left-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-dark text-white shadow-lg transition-transform hover:scale-110"
+      className="group fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-brand-dark text-white shadow-lg transition-transform hover:scale-110"
     >
       {/* Pulse ring */}
       <span className="absolute inset-0 animate-ping rounded-full bg-brand-dark opacity-20 group-hover:opacity-40" />

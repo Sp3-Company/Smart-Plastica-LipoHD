@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Image from "next/image"
 import { PROCEDURES, CONTACT } from "@/lib/constants"
 import { createMetadata } from "@/lib/metadata"
 
@@ -8,6 +8,42 @@ export const metadata = createMetadata({
     "Conheça os procedimentos de cirurgia plástica com segurança e resultados naturais. Cirurgiões certificados pela SBCP em São Paulo.",
   path: "/procedimentos",
 })
+
+function ProcedureCard({
+  proc,
+}: {
+  proc: { name: string; slug: string; image: string; description: string }
+}) {
+  return (
+    <div className="bg-white rounded-2xl overflow-hidden border border-brand-beige hover:border-brand-primary hover:shadow-md transition">
+      <div className="relative aspect-[3/4]">
+        <Image
+          src={proc.image}
+          alt={proc.name}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+        />
+      </div>
+      <div className="p-8">
+        <h4 className="font-display text-2xl md:text-3xl text-brand-dark mb-4">
+          {proc.name}
+        </h4>
+        <p className="text-brand-neutral-warm leading-relaxed mb-6">
+          {proc.description}
+        </p>
+        <a
+          href={CONTACT.whatsappDefault}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-brand-primary font-semibold hover:text-brand-warm transition-colors"
+        >
+          Saiba mais &rarr;
+        </a>
+      </div>
+    </div>
+  )
+}
 
 export default function ProcedimentosPage() {
   const allWomenProcedures = PROCEDURES.women
@@ -49,25 +85,7 @@ export default function ProcedimentosPage() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {allWomenProcedures.map((proc) => (
-                <div
-                  key={proc.slug}
-                  className="bg-white rounded-2xl p-8 border border-brand-beige hover:border-brand-primary hover:shadow-md transition"
-                >
-                  <h4 className="font-display text-2xl md:text-3xl text-brand-dark mb-4">
-                    {proc.name}
-                  </h4>
-                  <p className="text-brand-neutral-warm leading-relaxed mb-6">
-                    {proc.description}
-                  </p>
-                  <a
-                    href={CONTACT.whatsappDefault}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-brand-primary font-semibold hover:text-brand-warm transition-colors"
-                  >
-                    Saiba mais &rarr;
-                  </a>
-                </div>
+                <ProcedureCard key={proc.slug} proc={proc} />
               ))}
             </div>
           </div>
@@ -79,25 +97,7 @@ export default function ProcedimentosPage() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {allMenProcedures.map((proc) => (
-                <div
-                  key={proc.slug}
-                  className="bg-white rounded-2xl p-8 border border-brand-beige hover:border-brand-primary hover:shadow-md transition"
-                >
-                  <h4 className="font-display text-2xl md:text-3xl text-brand-dark mb-4">
-                    {proc.name}
-                  </h4>
-                  <p className="text-brand-neutral-warm leading-relaxed mb-6">
-                    {proc.description}
-                  </p>
-                  <a
-                    href={CONTACT.whatsappDefault}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-brand-primary font-semibold hover:text-brand-warm transition-colors"
-                  >
-                    Saiba mais &rarr;
-                  </a>
-                </div>
+                <ProcedureCard key={proc.slug} proc={proc} />
               ))}
             </div>
           </div>
@@ -118,25 +118,7 @@ export default function ProcedimentosPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {allFacialProcedures.map((proc) => (
-              <div
-                key={proc.slug}
-                className="bg-white rounded-2xl p-8 border border-brand-beige hover:border-brand-primary hover:shadow-md transition"
-              >
-                <h4 className="font-display text-2xl md:text-3xl text-brand-dark mb-4">
-                  {proc.name}
-                </h4>
-                <p className="text-brand-neutral-warm leading-relaxed mb-6">
-                  {proc.description}
-                </p>
-                <a
-                  href={CONTACT.whatsappDefault}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-brand-primary font-semibold hover:text-brand-warm transition-colors"
-                >
-                  Saiba mais &rarr;
-                </a>
-              </div>
+              <ProcedureCard key={proc.slug} proc={proc} />
             ))}
           </div>
         </div>
