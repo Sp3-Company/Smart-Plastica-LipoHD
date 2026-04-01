@@ -1,4 +1,5 @@
 import { Hero } from "@/components/home/hero"
+import { Dobra } from "@/components/home/dobra"
 import { AboutSection } from "@/components/home/about-section"
 import { Differentials } from "@/components/home/differentials"
 import { JourneySteps } from "@/components/home/journey-steps"
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <Dobra />
       <AboutSection />
       <Differentials />
       <JourneySteps />

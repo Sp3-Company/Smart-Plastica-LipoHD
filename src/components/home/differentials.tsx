@@ -90,13 +90,13 @@ export function Differentials() {
               com o médico ideal para o seu caso.
             </p>
           </div>
-          <div className="flex-shrink-0">
+          <div className="hidden md:block shrink-0">
             <Image
-              src="/images/smartlovers-02.webp"
+              src="/images/smartlovers-03.webp"
               alt="Smart Lovers"
-              width={160}
-              height={160}
-              className="rounded-full object-cover"
+              width={120}
+              height={120}
+              className="rounded-full animate-spin-slow"
             />
           </div>
         </div>
@@ -107,7 +107,7 @@ export function Differentials() {
           <div className="bg-[#e8ddd3] rounded-2xl overflow-hidden md:row-span-2 flex flex-col">
             <div className="relative w-full aspect-[4/3]">
               <Image
-                src="/images/smartlovers-01.webp"
+                src="/images/diferencial.webp"
                 alt="Smart Lovers"
                 fill
                 className="object-cover"
