@@ -83,10 +83,10 @@ export function JourneySteps() {
             {STEPS.map((step, index) => (
               <div
                 key={step.number}
-                className={`flex gap-5 py-8${index < STEPS.length - 1 ? " border-b border-white/10" : ""}`}
+                className={`flex gap-6 py-12${index < STEPS.length - 1 ? " border-b border-white/10" : ""}`}
               >
                 {/* Number circle */}
-                <div className="shrink-0">
+                <div className="shrink-0 pt-1">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full border border-brand-light/40 text-sm text-brand-light">
                     {step.number}
                   </div>
@@ -97,7 +97,7 @@ export function JourneySteps() {
                   <h3 className="text-lg font-semibold text-white">
                     {step.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white/70">
+                  <p className="mt-3 text-sm leading-relaxed text-white/60">
                     {step.description}
                   </p>
                 </div>
