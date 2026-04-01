@@ -23,31 +23,37 @@ const DIFFERENTIALS = [
     title: "Consultora especializada",
     description:
       "Desde a primeira conversa, uma consultora dedicada entende suas necessidades e guia cada passo da sua jornada com acolhimento e clareza.",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>,
   },
   {
     title: "Tecnologia a favor da sua beleza",
     description:
       "Utilizamos ferramentas modernas para planejamento cirúrgico, simulações e acompanhamento, trazendo mais previsibilidade ao seu resultado.",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>,
   },
   {
     title: "Segurança em toda a jornada",
     description:
       "Cirurgiões certificados pela SBCP, hospitais de referência e protocolos rigorosos para que você se sinta segura do início ao fim.",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>,
   },
   {
     title: "O sonho precisa ser possível",
     description:
       "Acreditamos que realizar seu sonho não deve ser um sacrifício. Por isso, buscamos condições que tornem sua decisão viável e planejada.",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg>,
   },
   {
     title: "Você nunca caminha sozinha",
     description:
       "Do pré ao pós-operatório, nossa equipe está presente em cada momento, com retornos programados e suporte dedicado à sua recuperação.",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>,
   },
   {
     title: "Técnica que sustenta resultados",
     description:
       "Procedimentos realizados por especialistas que priorizam naturalidade, harmonia e resultados que se mantêm ao longo do tempo.",
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white"><circle cx="12" cy="8" r="6" /><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" /></svg>,
   },
 ]
 
@@ -142,13 +148,14 @@ export default function QuemSomosPage() {
             </div>
 
             {/* Image */}
-            <div className="relative aspect-[4/5] rounded-2xl overflow-hidden">
+            <div className="flex items-center justify-center">
               <Image
                 src="/images/quem-somos.webp"
                 alt="Equipe Smart Plástica São Paulo"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                width={506}
+                height={647}
+                className="rounded-2xl w-full max-w-[420px] h-auto"
+                sizes="(max-width: 1024px) 100vw, 420px"
               />
             </div>
           </div>
@@ -177,13 +184,11 @@ export default function QuemSomosPage() {
             {DIFFERENTIALS.map((item) => (
               <div
                 key={item.title}
-                className="bg-white rounded-2xl p-6 shadow-sm border border-brand-beige"
+                className="bg-[#e8ddd3] rounded-2xl p-6"
               >
-                {/* Icon circle */}
-                <div className="w-12 h-12 rounded-full bg-brand-primary/10 flex items-center justify-center mb-5">
-                  <div className="w-5 h-5 rounded-full bg-brand-primary" />
+                <div className="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center mb-4">
+                  {item.icon}
                 </div>
-
                 <h3 className="font-display text-xl md:text-2xl text-brand-dark mb-3">
                   {item.title}
                 </h3>

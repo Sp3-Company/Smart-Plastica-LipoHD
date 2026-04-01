@@ -1,37 +1,58 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { CONTACT } from "@/lib/constants"
 
 export function WhatsAppButton() {
   const [onDark, setOnDark] = useState(false)
 
-  useEffect(() => {
-    const check = () => {
-      const btn = document.getElementById("wa-btn")
-      if (!btn) return
-      const rect = btn.getBoundingClientRect()
-      const cy = rect.top + rect.height / 2
-      const els = document.elementsFromPoint(rect.left + rect.width / 2, cy)
-      const behind = els.find(
-        (el) => el !== btn && el !== btn.parentElement && el.tagName !== "HTML" && el.tagName !== "BODY"
-      )
-      if (behind) {
-        const bg = getComputedStyle(behind).backgroundColor
-        if (bg && bg !== "rgba(0, 0, 0, 0)" && bg !== "transparent") {
-          const match = bg.match(/\d+/g)
-          if (match) {
-            const [r, g, b] = match.map(Number)
-            const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
-            setOnDark(luminance < 0.5)
-          }
+  const checkBackground = useCallback(() => {
+    const btn = document.getElementById("wa-btn")
+    if (!btn) return
+    const rect = btn.getBoundingClientRect()
+    const centerY = rect.top + rect.height / 2
+    const centerX = rect.left + rect.width / 2
+
+    // Get all elements at the button's position
+    const elements = document.elementsFromPoint(centerX, centerY)
+
+    for (const el of elements) {
+      if (el.id === "wa-btn" || el.closest("#wa-btn")) continue
+
+      const style = getComputedStyle(el)
+      const bg = style.backgroundColor
+
+      if (bg && bg !== "rgba(0, 0, 0, 0)" && bg !== "transparent") {
+        const match = bg.match(/(\d+)/g)
+        if (match && match.length >= 3) {
+          const [r, g, b] = match.map(Number)
+          // Calculate relative luminance
+          const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255
+          setOnDark(luminance < 0.45)
+          return
         }
       }
+
+      // Check for background image (like the dobra section)
+      if (style.backgroundImage && style.backgroundImage !== "none") {
+        setOnDark(true)
+        return
+      }
     }
-    check()
-    window.addEventListener("scroll", check, { passive: true })
-    return () => window.removeEventListener("scroll", check)
+
+    // Default: light background
+    setOnDark(false)
   }, [])
+
+  useEffect(() => {
+    checkBackground()
+    window.addEventListener("scroll", checkBackground, { passive: true })
+    window.addEventListener("resize", checkBackground, { passive: true })
+    return () => {
+      window.removeEventListener("scroll", checkBackground)
+      window.removeEventListener("resize", checkBackground)
+    }
+  }, [checkBackground])
 
   return (
     <a
@@ -40,20 +61,17 @@ export function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"
-      className={`group fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
+      className={`group fixed bottom-6 right-6 z-50 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
         onDark
           ? "bg-white text-brand-dark"
           : "bg-brand-dark text-white"
       }`}
     >
-      {/* Pulse ring */}
       <span
         className={`absolute inset-0 animate-ping rounded-full opacity-20 group-hover:opacity-40 ${
           onDark ? "bg-white" : "bg-brand-dark"
         }`}
       />
-
-      {/* WhatsApp icon */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="28"

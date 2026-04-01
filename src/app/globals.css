@@ -48,6 +48,18 @@ h6 {
   font-family: var(--font-display);
 }
 
+/* Cursor pointer for all interactive elements */
+a,
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+select,
+summary,
+[tabindex]:not([tabindex="-1"]) {
+  cursor: pointer;
+}
+
 /* Slow spin animation for seals */
 @keyframes spin-slow {
   from { transform: rotate(0deg); }
