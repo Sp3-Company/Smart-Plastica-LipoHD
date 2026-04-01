@@ -105,12 +105,13 @@ export function Differentials() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {/* Column 1: Tall card with image spanning 2 rows */}
           <div className="bg-[#e8ddd3] rounded-2xl overflow-hidden md:row-span-2 flex flex-col">
-            <div className="relative w-full aspect-[4/3]">
+            <div className="flex-1 flex items-end justify-center overflow-hidden">
               <Image
                 src="/images/diferencial.webp"
                 alt="Smart Lovers"
-                fill
-                className="object-cover"
+                width={400}
+                height={500}
+                className="w-full h-auto object-contain"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
             </div>

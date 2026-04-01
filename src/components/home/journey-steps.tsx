@@ -44,8 +44,8 @@ export function JourneySteps() {
     <section className="bg-brand-dark">
       <div className="mx-auto max-w-7xl px-4 py-16 md:py-24">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left column — title + CTA */}
-          <div>
+          {/* Left column — sticky title + CTA */}
+          <div className="lg:sticky lg:top-28 lg:self-start will-change-transform">
             <span className="text-sm font-semibold uppercase tracking-widest text-brand-light">
               COMO FUNCIONA
             </span>

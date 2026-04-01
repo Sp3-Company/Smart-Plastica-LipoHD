@@ -252,10 +252,6 @@ export function Footer() {
             {SITE.cnpj}
           </p>
 
-          {/* Developer credit */}
-          <p className="mt-1 text-xs text-white/60">
-            Desenvolvido por: Lucas Tavares
-          </p>
         </div>
       </div>
     </footer>
