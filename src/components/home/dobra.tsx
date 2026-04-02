@@ -22,8 +22,8 @@ export function Dobra() {
             <Image
               src="/images/selo-5anos.png"
               alt="+ 5 anos realizando sonhos"
-              width={200}
-              height={200}
+              width={260}
+              height={260}
               className="mb-1"
             />
           </div>
@@ -33,8 +33,8 @@ export function Dobra() {
             <Image
               src="/images/selo-2000.png"
               alt="+ de 2.000 Smart Lovers"
-              width={200}
-              height={200}
+              width={260}
+              height={260}
               className="mb-1"
             />
           </div>
