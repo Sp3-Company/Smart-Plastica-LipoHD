@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Dobra />
       <AboutSection />
+      <Dobra />
       <Differentials />
       <JourneySteps />
       <Procedures />
