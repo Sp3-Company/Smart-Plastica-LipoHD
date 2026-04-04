@@ -1,29 +1,27 @@
-import { Hero } from "@/components/home/hero"
-import { Dobra } from "@/components/home/dobra"
-import { AboutSection } from "@/components/home/about-section"
-import { Differentials } from "@/components/home/differentials"
-import { JourneySteps } from "@/components/home/journey-steps"
-import { Procedures } from "@/components/home/procedures"
-import { Manifesto } from "@/components/home/manifesto"
-import { Testimonials } from "@/components/home/testimonials"
-import { Location } from "@/components/home/location"
-import { BlogPreview } from "@/components/home/blog-preview"
-import { FAQ } from "@/components/home/faq"
+import { Hero } from "@/components/lp/lipo-hd/hero"
+import { Pain } from "@/components/lp/lipo-hd/pain"
+import { WhatIs } from "@/components/lp/lipo-hd/what-is"
+import { Comparison } from "@/components/lp/lipo-hd/comparison"
+import { HowItWorks } from "@/components/lp/lipo-hd/how-it-works"
+import { Differentials } from "@/components/lp/lipo-hd/differentials"
+import { Manifesto } from "@/components/lp/lipo-hd/manifesto"
+import { Testimonials } from "@/components/lp/lipo-hd/testimonials"
+import { FAQ } from "@/components/lp/lipo-hd/faq"
+import { FinalCta } from "@/components/lp/lipo-hd/final-cta"
 
-export default function Home() {
+export default function LipoHdLandingPage() {
   return (
     <>
       <Hero />
-      <AboutSection />
-      <Dobra />
+      <Pain />
+      <WhatIs />
+      <Comparison />
+      <HowItWorks />
       <Differentials />
-      <JourneySteps />
-      <Procedures />
       <Manifesto />
       <Testimonials />
-      <Location />
-      <BlogPreview />
       <FAQ />
+      <FinalCta />
     </>
   )
 }
