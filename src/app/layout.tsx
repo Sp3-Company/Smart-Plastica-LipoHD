@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
 import { Source_Sans_3, Cormorant_Garamond } from "next/font/google"
 import { SITE } from "@/lib/constants"
-import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
-import { WhatsAppButton } from "@/components/layout/whatsapp-button"
+import { SiteChrome } from "@/components/layout/site-chrome"
 import "./globals.css"
 
 const sourceSans = Source_Sans_3({
@@ -46,10 +45,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${sourceSans.variable} ${cormorant.variable}`}>
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <WhatsAppButton />
+        <SiteChrome footer={<Footer />}>{children}</SiteChrome>
       </body>
     </html>
   )

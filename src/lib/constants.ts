@@ -9,13 +9,13 @@ export const SITE = {
 }
 
 export const CONTACT = {
-  phone: "(11) 91013-6326",
-  phoneClean: "5511910136326",
+  phone: "(11) 95213-6738",
+  phoneClean: "5511952136738",
   email: "contato@smartplastica.com.br",
   whatsappDefault:
-    "https://wa.me/5511910136326?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20uma%20consultora%20especializada!",
+    "https://wa.me/5511952136738?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20conversar%20com%20uma%20consultora%20especializada!",
   whatsappAgenda:
-    "https://wa.me/5511910136326?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20consulta!",
+    "https://wa.me/5511952136738?text=Olá%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20consulta!",
   hours: "Seg - Sex | 08h às 18h",
   instagram: "https://www.instagram.com/smart.plastica/",
   facebook: "https://www.facebook.com/smart.plastica/",
