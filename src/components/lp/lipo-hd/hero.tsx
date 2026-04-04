@@ -64,13 +64,15 @@ export function Hero() {
             {/* Trust strip com selos da marca — estilo site oficial */}
             <div className="grid grid-cols-2 md:grid-cols-3 items-center gap-4 md:gap-8 border-t border-white/10 pt-5 md:pt-6 max-w-3xl">
               <div className="flex items-center gap-2.5 md:gap-3">
-                <Image
-                  src="/images/selo-realizando-sonhos-light.svg"
-                  alt=""
-                  width={64}
-                  height={64}
-                  className="w-11 h-11 md:w-14 md:h-14 shrink-0 animate-spin-slow"
-                />
+                <div className="w-11 h-11 md:w-14 md:h-14 shrink-0">
+                  <Image
+                    src="/images/selo-realizando-sonhos-light.svg"
+                    alt=""
+                    width={64}
+                    height={64}
+                    className="w-full h-full"
+                  />
+                </div>
                 <div className="leading-tight">
                   <p className="font-display text-xl md:text-2xl text-[#f0eae1]">+ 5 anos</p>
                   <p className="text-white/60 text-[10px] md:text-xs uppercase tracking-wider">realizando sonhos</p>
@@ -78,13 +80,15 @@ export function Hero() {
               </div>
 
               <div className="flex items-center gap-2.5 md:gap-3">
-                <Image
-                  src="/images/selo-smart-lovers-light.svg"
-                  alt=""
-                  width={64}
-                  height={64}
-                  className="w-11 h-11 md:w-14 md:h-14 shrink-0 animate-spin-slow"
-                />
+                <div className="w-11 h-11 md:w-14 md:h-14 shrink-0">
+                  <Image
+                    src="/images/selo-smart-lovers-light.svg"
+                    alt=""
+                    width={64}
+                    height={64}
+                    className="w-full h-full"
+                  />
+                </div>
                 <div className="leading-tight">
                   <p className="font-display text-xl md:text-2xl text-[#f0eae1]">+ de 2.000</p>
                   <p className="text-white/60 text-[10px] md:text-xs uppercase tracking-wider">Smart Lovers</p>
