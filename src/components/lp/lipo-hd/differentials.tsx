@@ -1,5 +1,3 @@
-import { SectionBridge } from "./brand-graphics"
-
 export function Differentials() {
   const items = [
     {
@@ -87,7 +85,6 @@ export function Differentials() {
           ))}
         </div>
       </div>
-      <SectionBridge align="left" size="md" variant="light" />
     </section>
   )
 }
