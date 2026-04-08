@@ -2,15 +2,6 @@ export function Differentials() {
   const items = [
     {
       number: "01.",
-      pillar: "TECNOLOGIA",
-      title: "Planejamento preciso",
-      text: "Recursos modernos de análise e simulação para que você entenda antes o resultado esperado. Ciência e inovação a cada etapa.",
-      icon: (
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-      ),
-    },
-    {
-      number: "02.",
       pillar: "SEGURANÇA",
       title: "Hospital de referência",
       text: "Centro cirúrgico hospitalar completo, anestesista titulado e protocolos rigorosos do pré ao pós-operatório.",
@@ -19,7 +10,7 @@ export function Differentials() {
       ),
     },
     {
-      number: "03.",
+      number: "02.",
       pillar: "VIABILIDADE",
       title: "Um caminho possível",
       text: "Condições de parcelamento pensadas para tornar sua decisão planejada, consciente e sem sacrifício financeiro.",
@@ -28,7 +19,7 @@ export function Differentials() {
       ),
     },
     {
-      number: "04.",
+      number: "03.",
       pillar: "EXPERTISE",
       title: "Cirurgiões SBCP",
       text: "Profissionais certificados pela Sociedade Brasileira de Cirurgia Plástica. Estudo contínuo e domínio técnico que sustenta resultados consistentes.",
@@ -37,7 +28,7 @@ export function Differentials() {
       ),
     },
     {
-      number: "05.",
+      number: "04.",
       pillar: "CUIDADO",
       title: "Você nunca caminha sozinha",
       text: "Consultora dedicada do primeiro contato ao último retorno. Drenagens presenciais, escuta ativa e presença de verdade.",
@@ -55,14 +46,14 @@ export function Differentials() {
             POR QUE NA SMART PLÁSTICA
           </span>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl text-brand-dark mt-3 leading-tight">
-            CINCO PILARES QUE TE PROTEGEM
+            QUATRO PILARES QUE TE PROTEGEM
           </h2>
           <p className="text-brand-dark/75 text-base md:text-lg leading-relaxed mt-4">
             Tornamos possível realizar sonhos — com método, técnica e presença.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {items.map((it, i) => (
             <div
               key={it.pillar}
